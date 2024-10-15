@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Nishant</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="main-content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I’m Nishant, a first-year Computer Science student at DBUU. I’m passionate about coding, AI, and tackling tech challenges. When I’m not coding, I’m gaming or hiking. Let’s connect! Reach me at <a href="mailto:Nishantpandeyy07@gmail.com">Nishantpandeyy07@gmail.com</a>.</p>
+            <h3>Skills</h3>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React js</li>
+            </ul>
+        </section>
+        
+        <section id="social">
+            <h2>Connect with Me</h2>
+            <ul class="social-links">
+                <li><a href="https://in.linkedin.com/in/nishant-prakash-pandey-2a819b323" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-gallery">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A brief description of Project 1.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A brief description of Project 2.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>A brief description of Project 3.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="photos">
+            <h2>Photo Gallery</h2>
+            <div class="photo-gallery">
+                <div class="photo-card">
+                    <!-- Photo content goes here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message to me</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nishant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'thank-you.html';
+        });
+    </script>
+</body>
+</html>
