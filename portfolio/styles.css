@@ -70,7 +70,6 @@ body {
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.6s;
     position: relative; /* For z-index context */
-    
 }
 
 @keyframes fadeIn {
@@ -222,4 +221,55 @@ footer {
     width: 100%;
     margin-top: 30px;
     box-shadow: 0 -4px 15px rgba(216, 102, 102, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height */
+        position: relative; /* No fixed position */
+        padding: 20px;
+        box-shadow: none; /* Remove shadow */
+    }
+
+    .main-content {
+        margin-left: 0; /* No left margin on small screens */
+        padding: 20px; /* Reduced padding */
+    }
+
+    h2 {
+        font-size: 2em; /* Adjust heading size */
+    }
+
+    h3 {
+        font-size: 1.4em; /* Adjust subheading size */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar h1 {
+        font-size: 1.8em; /* Smaller heading */
+    }
+
+    .sidebar nav ul li {
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .project-gallery, .photo-gallery {
+        grid-template-columns: 1fr; /* One column for cards */
+    }
+
+    #contact-form {
+        gap: 15px; /* Reduced gap */
+    }
+
+    #contact-form input, 
+    #contact-form textarea {
+        font-size: 14px; /* Smaller input text size */
+    }
+
+    #contact-form button {
+        font-size: 16px; /* Smaller button text size */
+    }
 }
